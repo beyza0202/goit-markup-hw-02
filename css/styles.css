@@ -1,11 +1,11 @@
-/* ===== GLOBAL ===== */
+/* GLOBAL */
 body {
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
   width: 1440px;
 }
 
-/* ===== HEADER ===== */
+/* HEADER  */
 .page-header {
   display: flex;
   justify-content: space-between;
@@ -14,9 +14,9 @@ body {
   background-color: #ffffff;
 }
 
-/* Logo + Menü yan yana */
+
 .nav {
-  margin-left: 20px; /* logoya yaklaşma/uzaklaşmayı buradan ayarlarsın */
+  margin-left: 20px;
 }
 
 .nav-list {
@@ -59,7 +59,7 @@ body {
   text-decoration: none;
 }
 
-/* ===== HERO ===== */
+/*  HERO  */
 .hero {
   background-color: #2e2f42;
   text-align: center;
@@ -72,9 +72,9 @@ body {
   margin-bottom: 40px;
 }
 
-.hero-btn {
-  background-color: #4d5ae5;
-  color: white;
+.hero-button {
+  background-color: #4d5ae5; 
+  color: #ffffff; 
   border: none;
   border-radius: 4px;
   font-size: 16px;
@@ -82,9 +82,22 @@ body {
   width: 169px;
   height: 56px;
   cursor: pointer;
+  transition: transform 0.3s ease; 
 }
 
-/* ===== FEATURES ===== */
+.hero-button:hover {
+  transform: scale(1.05); 
+}
+
+.hero-button:active {
+  transform: scale(0.97);
+}
+
+
+
+
+
+/*  FEATURES */
 .features {
   text-align: left;
   font-family: "roboto";
@@ -118,7 +131,7 @@ body {
   color: black;
 }
 
-/* ===== TEAM ===== */
+/*  TEAM  */
 .team {
   background-color: #f4f4fd;
   text-align: center;
@@ -156,7 +169,7 @@ body {
   transform: translateY(-4px);
 }
 
-/* 🔹 Görsel */
+
 .team-item img {
   width: 100%;
   height: 260px;
@@ -164,7 +177,7 @@ body {
   display: block;
 }
 
-/* 🔹 Yazı alanı */
+
 .team-info {
   padding: 16px;
 }
@@ -225,7 +238,7 @@ body {
   line-height: 1.5rem;
   letter-spacing: 2%;
   color: #2e2f42;
-  margin-bottom: 8px; /* altındaki “App” yazısına mesafe */
+  margin-bottom: 8px; 
 }
 
 .portfolio-type {
@@ -264,7 +277,7 @@ body {
   display: block;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 .page-footer {
   background-color: #2e2f42;
   color: #e7e9fc;
