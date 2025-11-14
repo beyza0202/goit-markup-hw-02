@@ -14,6 +14,25 @@ body {
     background-color: #ffffff;
   }
   
+  /* Logo + Menü yan yana */
+  .nav {
+    margin-left: 20px; /* logoya yaklaşma/uzaklaşmayı buradan ayarlarsın */
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link {
+    color: #2e2f42;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
   .logo {
     text-decoration: none;
     font-size: 18px;
@@ -28,20 +47,9 @@ body {
     color: #2e2f42;
   }
   
-  .nav-list {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-link {
-    color: #2e2f42;
-    text-decoration: none;
-  }
-  
   .contact {
+    display: flex;
+    gap: 20px;
     font-style: normal;
     color: #434455;
   }
@@ -49,8 +57,9 @@ body {
   .contact-link {
     color: #434455;
     text-decoration: none;
-    margin-right: 20px;
   }
+  
+  
   
   /* ===== HERO ===== */
   .hero {
@@ -79,8 +88,15 @@ body {
   
   /* ===== FEATURES ===== */
   .features {
-    text-align: center;
+    text-align: left;
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
     padding: 60px 0;
+    letter-spacing: 2%;
+    color: slategrey;
+
   }
   
   .features-list {
@@ -100,22 +116,25 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: 0.02em;
+    letter-spacing: 2%;
+    font-family: "roboto";
+    color: black;
   }
   
   /* ===== TEAM ===== */
   .team {
     background-color: #f4f4fd;
     text-align: center;
-    padding: 80px 0;
+    padding: 120px 0;
   }
   
   .team-title {
     font-size: 36px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
-    margin-bottom: 40px;
+    color: #2e2f42;
+    margin-bottom: 72px;
   }
   
   .team-list {
@@ -128,11 +147,126 @@ body {
   }
   
   .team-item {
-    background-color: white;
-    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 0 0 4px 4px;
     width: 264px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
   }
   
+  .team-item:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* 🔹 Görsel */
+  .team-item img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* 🔹 Yazı alanı */
+  .team-info {
+    padding: 16px;
+  }
+  
+  /* İsim */
+  .team-info h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+  
+  /* Görev */
+  .team-info p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #434455;
+    margin: 0;
+  }
+  
+  /* portfolio kısmı*/
+
+.portfolio{
+  padding: 120px;
+  background-color: white;
+  text-align: center;
+}
+
+.portfolio-title{
+  font-size: 36px;
+  font-style: bold;
+  line-height: 40px;
+  letter-spacing: 2%;
+  text-align: center;
+  font-weight: 700;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.portfolio-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-name {  /*üstler*/
+  font-weight: 500;
+  font-style: medium;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  color: #2e2f42;
+  margin-bottom: 8px; /* altındaki “App” yazısına mesafe */
+}
+
+.portfolio-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  color: #434455;
+  margin: 0;
+}
+
+.portfolio-item {
+  width: 360px;
+  background-color: #ffffff;
+  border: 1px solid #e7e9fc;
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15),
+0px 2px 4px rgba(46, 47, 66, 0.16);
+cursor: pointer;
+
+}
+
+.portfolio-info {
+  padding: 32px 16px;
+  text-align: left;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 300px; 
+  object-fit: cover; 
+  display: block;
+}
+
+
   /* ===== FOOTER ===== */
   .page-footer {
     background-color: #2e2f42;
@@ -145,7 +279,10 @@ body {
   }
   
   .footer-text {
-    margin-top: 20px;
-    line-height: 1.5;
+    width: 264px;
+    line-height: 30px;
+    top: 3088px;
+    color: #F4F4FD;
+    text-align: left;
   }
   
