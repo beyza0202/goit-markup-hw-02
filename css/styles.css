@@ -32,10 +32,20 @@ body {
   font-weight: 500;
 }
 
+
+.nav-link:hover,
+.contact-link:hover {
+  color: #4d5ae5; 
+}
+
+
 .logo {
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
+  line-height: 1.17;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
 }
 
 .logo-blue {
@@ -100,7 +110,7 @@ body {
   font-size: 16px;
   line-height: 1.5rem;
   padding: 60px 0;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: slategrey;
 }
 
@@ -121,7 +131,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5rem;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   font-family: "roboto";
   color: black;
 }
@@ -206,7 +216,7 @@ body {
   font-size: 36px;
   font-style: bold;
   line-height: 2.5rem;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   text-align: center;
   font-weight: 700;
   color: #2e2f42;
@@ -229,7 +239,7 @@ body {
   font-style: medium;
   font-size: 20px;
   line-height: 1.5rem;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
 }
@@ -238,7 +248,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5rem;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: #434455;
   margin: 0;
 }
@@ -255,7 +265,6 @@ body {
   box-shadow:
     0px 2px 8px rgba(0, 0, 0, 0.15),
     0px 2px 4px rgba(46, 47, 66, 0.16);
-  cursor: pointer;
 }
 
 .portfolio-info {
@@ -279,6 +288,7 @@ body {
 
 .logo-light {
   color: white;
+  line-height: 1.17;
 }
 
 .footer-text {
