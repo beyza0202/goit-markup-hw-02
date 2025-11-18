@@ -32,12 +32,10 @@ body {
   font-weight: 500;
 }
 
-
 .nav-link:hover,
 .contact-link:hover {
-  color: #4d5ae5; 
+  color: #4d5ae5;
 }
-
 
 .logo {
   text-decoration: none;
